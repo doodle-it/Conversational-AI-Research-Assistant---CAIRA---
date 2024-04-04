@@ -1,0 +1,617 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+
+
+
+	
+	
+	<title>Computer-Aided Civil and Infrastructure Engineering - Journal Information</title>
+	<meta name="description" content="Computer Aided Civil and Infrastructure Engineering: journal   information, contents lists and abstracts on the Blackwell   Publishing website.">
+	<meta name="keywords" content="Computer Aided Civil and Infrastructure Engineering, civil   engineering, infrastructure engineering, information technology">
+	<meta name="issn" content="1093-9687">
+	
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta name="DC.publisher" content="Blackwell Publishing Ltd">
+	
+	<!--wiley styles-->
+	<link href="vi.asp_files/base.css" type="text/css" rel="stylesheet">
+	<!--[if lt IE 7]>
+		<link href="/bw/wiley/css/base-ie.css" type="text/css" rel="stylesheet" />
+         <![endif]-->
+	<!--end wiley styles-->
+	
+	<style type="text/css"><!-- @import "/bw/c/layout.css"; --></style>
+	<style type="text/css"><!-- @import "/bw/c/content.css"; --></style>
+	<style type="text/css"><!-- @import url(/bw/c/menu.css); --></style>
+	
+	<!--Do not import print stylesheet to avoid nasty problems in IE5x-->
+	<link rel="stylesheet" href="vi.asp_files/print.css" type="text/css" media="print">
+	
+	
+	
+	
+	
+	   <meta name="WT.sv" content="">
+	   <meta name="DCS.dcsuri" content="%2Fbw%2Fvi%2Easp">
+	   <meta name="DCS.dcsqry" content="ref=1093-9687">
+	   <meta name="DCS.dcsdat" content="20100806130746">
+	   <meta name="DCSext.ProductDescriptionCd" content="description">   
+	   <meta name="DCSext.Product" content="1093-9687+Computer-Aided Civil and Infrastructure Engineering">
+	   <meta name="DCSext.Subject" content="ZC0200+Civil engineering+">
+	   <meta name="DCSext.SiteCd" content="WILEY2">
+	   <meta name="DCSext.PrimaryContentGroup" content="Products">
+	   <meta name="DCSext.PageType" content="Product">
+	   <meta name="DCSext.Level1" content="Home">
+	   <meta name="DCSext.Level2" content="Home+%3E+Engineering+&amp;+Materials+Science">
+	   <meta name="DCSext.Level3" content="Home+%3E+Engineering+&amp;+Materials+Science+%3E+Civil+Engineering">
+	
+	
+
+
+
+	<script language="JavaScript">
+    function do_check (form) {
+    	if (form.query.value=="") {
+    		alert('Please make an entry in the product search field.');
+				return false;
+		} else {
+			return true;
+			}
+		}
+    </script>
+	
+		<script type="text/javascript">
+	
+
+	function validateForm()
+	{
+		var sMessage = '';
+		var sTitle = document.addvi.Title.value;
+		var sMonthYear = document.addvi.MonthYear.value;
+		var sArticle1 = document.addvi.ArticleDOI[0].value;
+		var sArticle2 = document.addvi.ArticleDOI[1].value;	
+		
+		sTitle = trim(sTitle);
+		sMonthYear = trim(sMonthYear);
+		sArticle1 = trim(sArticle1);
+		sArticle2 = trim(sArticle2);
+		
+		if (sTitle == '') 
+		{
+			sMessage = "* Please enter the Title.<br />";
+		}
+		if (sMonthYear == '') 
+		{
+			sMessage = sMessage + "* Please enter the Month & Year.<br />";
+		} else if  ((sMonthYear != "") && (isDate(sMonthYear)==false))
+		{
+			sMessage = sMessage + "* Please enter a valid date on Month & Year.<br />";
+		}
+		if (sArticle1 == '') 
+		{
+			sMessage = sMessage + "* Please enter Article 1 DOI.<br />";
+		}
+		if (sArticle2 == '') 
+		{
+			sMessage = sMessage + "* Please enter Article 2 DOI.<br />";
+		}
+		var x=document.getElementById('warning');
+		x.innerHTML = sMessage;
+		var y=document.getElementById('warningbottom');
+		y.innerHTML = sMessage;
+		
+		if (sMessage != "")
+		{
+			//window.alert(errmsg);
+		   return false;
+		}
+		else
+		{
+		   return true;
+		}
+	}
+
+
+	function trim(sString) 
+	{
+		while (sString.substring(0,1) == ' ')
+		{
+		sString = sString.substring(1, sString.length);
+		}
+		while (sString.substring(sString.length-1, sString.length) == ' ')
+		{
+		sString = sString.substring(0,sString.length-1);
+		} 
+		return sString;
+	}
+	/*
+		Add new Article DOI field
+	*/
+	function ClickAdd()
+	{
+		var tbl = document.getElementById('tblArticles');
+		var newtd;
+		var numi = document.getElementById('elementCount');
+		var num = (numi.value -1) + 2;
+		if (num == 50) {
+			document.getElementById('AddArticle').style.visibility='hidden';
+		} 
+		if (num > 50) {
+			document.getElementById('AddArticle').style.visibility='hidden';
+			return false;
+		} 
+		document.getElementById('elementCount').value = num;
+		var newtr = tbl.insertRow(tbl.rows.length);
+		var trIdName = 'mytr';
+		newtd = newtr.insertCell(newtr.cells.length);
+		newtd.innerHTML = '<span style="font-size:9px;">Article ' + num + ' DOI:</span>';
+		newtd = newtr.insertCell(newtr.cells.length);
+		newtd.innerHTML = '<input name="ArticleDOI" type="text" id="ArticleDOI" />';
+	}	
+	</script>
+</head><body>
+<ul class="skiplist">
+	<li class="skip"><a tabindex="1" href="#cont" accesskey="2">Skip to main content</a></li>
+	<li class="skip"><a tabindex="2" href="#side">Skip to section navigation.</a></li>
+</ul>
+
+<div id="page">
+	<div id="top-nav"> <a href="http://www.wiley.com/"><img src="vi.asp_files/wiley-logo.gif" alt="WILEY - Knowledge For Generations"></a>
+		<div>
+			<ul>
+				<li id="home-btn"><a href="http://www.wiley.com/"></a></li>
+				<li id="subjects-btn"><a href="http://www.wiley.com/go/subjects"></a></li>
+				<li id="about-btn"><a href="http://www.wiley.com/go/about" class="last"></a></li>
+			</ul>
+		</div>
+		<form method="GET" action="http://www.wiley.com/remsearch.cgi" onsubmit="return do_check(this);">
+			<img src="vi.asp_files/cart.gif" alt="cart.gif" style="margin-bottom: -2px;" height="12" width="20"> <a href="http://www.wiley.com/go/cart">CART</a>&nbsp;|&nbsp; <a href="http://www.wiley.com/go/my_acct">MY
+			ACCOUNT</a>&nbsp;|&nbsp; <a href="http://www.wiley.com/go/contact_us">CONTACT
+			US</a>&nbsp;|&nbsp; <a href="http://www.wiley.com/go/help">HELP</a>&nbsp;&nbsp;
+			<input class="text" id="query" name="query" value="Search Keyword, Title, Author, ISBN, ISSN" onblur="if (this.value == '') {this.value = 'Search Keyword, Title, Author, ISBN, ISSN';}" onfocus="if (this.value == 'Search Keyword, Title, Author, ISBN, ISSN') {this.value = '';}" type="text">
+			&nbsp; <input src="vi.asp_files/search.gif" class="search" alt="search.gif" style="width: 48px; height: 15px;" type="image" height="15" width="48">
+			<!--<img src="/bw/wiley/images/search.gif" alt="" class="search" />-->
+		</form>
+	</div>	
+	<div id="content">
+		<div id="breadcrumb">
+			
+		
+						
+				
+						<div xmlns:fo="http://www.w3.org/1999/XSL/Format">
+							<a href="http://www.wiley.com/WileyCDA">Home</a>&nbsp;/&nbsp;<a href="http://www.wiley.com/WileyCDA/Section/id-350463.html">Engineering &amp; Materials Science</a>&nbsp;/&nbsp;<a href="http://www.wiley.com/WileyCDA/Section/id-350488.html">Civil Engineering</a>&nbsp;/&nbsp;<a href="http://www.wiley.com/WileyCDA/Section/id-350508.html">General Civil Engineering  </a>&nbsp;/&nbsp;
+						</div>				
+					
+		
+	
+	
+		</div>
+		<div id="wileyblackwell"><img style="margin: 10px 5px; height: 30px; width: 300px;" src="vi.asp_files/blackwell_horiz_k.jpg"></div>
+		<div id="sectionhead" style="background-color: rgb(255, 255, 255);">
+		
+						
+				
+					<div style="background-color: rgb(18, 121, 50); display: block; width: 100%; text-align: left;" xmlns:fo="http://www.w3.org/1999/XSL/Format">					
+						
+                        	
+								<img title="Computer-Aided Civil and Infrastructure Engineering" tcmuri="tcm:10-4950" src="vi.asp_files/MICE_large.jpg" height="64" width="500">																										
+							
+							
+									
+					</div>				
+					
+		
+	
+	</div>
+		<div id="outerColumnContainer">
+			<div id="innerColumnContainer">
+               <a name="top" id="top"></a>
+				<div id="leftColumn">
+					<div class="inside_l">
+						<ul class="skiplist">
+							<li class="skip"><a title="Section navigation" href="#cont" name="side" id="side">Skip to main content.</a></li>
+						</ul>
+						
+	<h1>Journal Menu</h1>
+<ul>
+<li><a href="http://www.wiley.com/bw/journal.asp?ref=1093-9687&amp;site=1">
+			Journal Home
+			</a></li>
+<li><a href="http://www.wiley.com/bw/aims.asp?ref=1093-9687&amp;site=1">
+							Aims &amp; Scope
+						</a></li>
+<li><a href="http://www.wiley.com/bw/submit.asp?ref=1093-9687&amp;site=1">
+					Author Guidelines
+				</a></li>
+<li><a href="http://www.wiley.com/bw/editors.asp?ref=1093-9687&amp;site=1">
+					Editorial Contacts
+				</a></li>
+<li><a href="http://www.interscience.wiley.com/jpages/1093-9687" target="_blank">View content online</a></li>
+<li class="selected"><a href="http://www.wiley.com/bw/vi.asp?ref=1093-9687&amp;site=1" class="selected">
+					Virtual Issues
+				</a></li>
+</ul>
+<h2>Sales and Services</h2>
+<ul>
+<li><a href="http://www.wiley.com/bw/subs.asp?ref=1093-9687&amp;site=1">
+						Subscribe / Renew
+					</a></li>
+<li><a href="http://www.wiley.com/bw/librecfm.asp?ref=1093-9687&amp;title=Computer-Aided%20Civil%20and%20Infrastructure%20Engineering">Recommend to Library</a></li>
+<li><a href="http://www.wiley.com/bw/cservices/default.asp">
+				Customer Services</a></li>
+<li><a href="http://www.wiley.com/bw/permis.asp?ref=1093-9687&amp;site=1">
+					Permissions
+				</a></li>
+<li><a href="http://www.wiley.com/bw/offprints.asp?ref=1093-9687&amp;site=1">
+					Reprints/Offprints
+				</a></li>
+</ul>
+
+					</div>
+				</div>
+	
+				<div id="contentColumn">
+					<div class="inside_c">
+					<!-- middle column content begins -->
+	
+	
+	
+	
+ 	
+		<h1 style="background-color: rgb(18, 121, 50);">
+			Computer-Aided Civil and Infrastructure Engineering
+			 Virtual Issues
+		</h1>
+		<h2>
+		Computer-Aided Civil and Infrastructure Engineering
+		</h2>
+		
+		<p>
+		
+		</p>
+				
+		<p>
+			
+				</p><ul>
+				
+				
+				
+				
+					
+					
+						
+					<li><a href="#518">Earthquakes and Health Monitoring of Structures February 2010</a></li>
+				
+				
+				</ul>
+			
+		
+		
+		
+
+			
+				
+				
+				
+
+
+				
+					
+				<p><a name="518"></a></p><h1 style="background-color: rgb(18, 121, 50);"><a href="#top" class="atop">Top</a>Earthquakes and Health Monitoring of Structures February 2010</h1>
+					
+						<p>Edited by Hojjat Adeli</p>
+					
+					
+					
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2009.00642.x">Calculation
+ of Posterior Probabilities for Bayesian Model Class Assessment and 
+Averaging from Posterior Samples Based on Dynamic System Data</a><br>
+						
+							
+								Cheung, S.H. and J. L. Beck, J.L
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2008.00589.x">Uncertainty and Sensitivity Analysis of Damage Identification Results Obtained Using Finite Element Model Updating</a><br>
+						
+							
+								Babak Moaveni, Joel P. Conte, François M. Hemez
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2009.00595.x">Recurrent Neural Network for Approximate Earthquake Time and Location Prediction Using Multiple Seismicity Indicators</a><br>
+						
+							
+								Ashif Panakkat, Hojjat Adeli
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2008.00585.x">Noncontact Operational Modal Analysis of Structural Members by Laser Doppler Vibrometer</a><br>
+						
+							
+								Dionysius M. Siringoringo, Yozo Fujino
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2008.00572.x">Long-Term Monitoring and Identification of Bridge Structural Parameters</a><br>
+						
+							
+								Serdar Soyoz, Maria Q. Feng
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2008.00543.x">Fuzzy Clustering of Stability Diagrams for Vibration-Based Structural Health Monitoring</a><br>
+						
+							
+								E. Peter Carden, James M. W. Brownjohn
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2008.00547.x">Experimental
+ Assessment of the Accuracy of GPS and RTS for the Determination of the 
+Parameters of Oscillation of Major Structures</a><br>
+						
+							
+								Panos A. Psimoulis, Stathis C. Stiros
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2007.00537.x">Numerical
+ Investigation of a Variable Damping Semiactive Device for the 
+Mitigation of the Seismic Response of Adjacent Structures</a><br>
+						
+							
+								Orlando Cundumi, Luis E. Suárez
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2007.00538.x">Response and Modeling of Cantilever Retaining Walls Subjected to Seismic Motions</a><br>
+						
+							
+								Russell A. Green, C. Guney Olgun, Wanda I. Cameron
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2007.00513.x">Computer-Aided
+ Pre- and Post-Earthquake Assessment of Buildings Involving Database 
+Compilation, GIS Visualization, and Mobile Data Transmission</a><br>
+						
+							
+								A. G. Sextos, A. J. Kappos, K. C. Stylianidis
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2007.00482.x">Numerical Model for Biaxial Earthquake Response of Reinforced Concrete</a><br>
+						
+							
+								Cemalettin Dönmez, Mete A. Sözen
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2007.00483.x">Numerical Treatment of Seismic Accelerograms and of Inelastic Seismic Structural Responses Using Harmonic Wavelets</a><br>
+						
+							
+								Pol D. Spanos, Agathoklis Giaralis, Nikolaos P. Politis, Jose M. Roesset
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2007.00486.x">Nonlinear Static Procedure for Seismic Vulnerability Assessment of Bridges</a><br>
+						
+							
+								S. Banerjee, M. Shinozuka
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2007.00487.x">An Integrated Fuzzy Control System for Structural Vibration</a><br>
+						
+							
+								Yasutoshi Nomura, Hitoshi Furuta, Michiyuki Hirokane
+							
+						
+						</p>
+					
+						
+						
+						<p><a href="http://doi.wiley.com/10.1111/j.1467-8667.2006.00466.x">A New Approach for Health Monitoring of Structures: Terrestrial Laser Scanning</a><br>
+						
+							
+								H. S. Park, H. M. Lee, Hojjat Adeli, I. Lee
+							
+						
+						</p>
+					
+				
+				
+			
+		
+		<hr>
+	
+	
+
+<br>
+						<!-- middle column content begins --></div>
+				</div>
+	
+				<div id="rightColumn">
+	
+					<div class="inside_r">
+						<!-- right column content begin -->
+						<div align="left">
+	
+	
+	
+	
+	
+	
+		<p class="centerimg"><img title="Computer-Aided Civil and Infrastructure Engineering - Cover" src="vi.asp_files/mice.jpg" height="140" width="95"></p>
+	 
+	
+		
+				<div class="puffcontpag"><div class="puffbutttop"><div class="puffbuttjournalmid"><ul><li><a href="http://www.interscience.wiley.com/jpages/1093-9687" class="eye" target="_blank">View content online</a></li></ul></div></div></div>
+			
+		
+				<div class="puffconteye"><div class="puffbutttop"><div class="puffbuttjournalmid"><ul><li><a href="http://www3.interscience.wiley.com/journal/118514357/toc" class="eye" target="_blank">View sample issue</a></li></ul></div></div></div>
+				<div class="puffcontarr"><div class="puffbutttop"><div class="puffbuttjournalmid"><ul><li><a href="http://www3.interscience.wiley.com/cgi-bin/setalert?ID=118514357&amp;alert=on" class="eye">Sign up for e-alerts</a></li></ul></div></div></div>
+				<div class="puffcontarr"><div class="puffbutttop"><div class="puffbuttjournalmid"><ul><li><a href="http://www3.interscience.wiley.com/rss/journal/118514357" class="eye" target="_blank">Sign up for RSS feed</a></li></ul></div></div></div>
+			
+		
+		
+		
+		
+		
+				<div class="puffcontarr"><div class="puffbutttop"><div class="puffbuttjournalmid"><ul><li><a href="http://www.wiley.com/bw/submit.asp?ref=1093-9687" class="eye">Submit an article</a></li></ul></div></div></div>
+			
+		
+	
+	
+	
+
+<br>
+							<!-- right column content end -->
+	
+						</div>
+					</div>
+				</div>
+	
+				<div class="clear mozclear"></div>
+			</div>
+		</div>
+	</div> <!-- /content -->
+<!-- BEGIN FOOTER -->    
+<div id="w-footer">
+        <div class="w-left">
+            
+            <h5>About Wiley:</h5> 
+            <div class="w-footer-links">
+            <a href="http://www.wiley.com/go/careers">Careers</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.wiley.com/go/locations">Locations</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.wiley.com/resources/investors">Investor Relations</a>
+            </div>
+            
+            <h5>Resources for:</h5>
+            <div class="w-footer-links">
+            <a href="http://www.wiley.com/go/resources/authors">Authors</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.wiley.com/go/resources/instructors">Instructors</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.wiley.com/go/resources/librarians">Librarians</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.wiley.com/go/resources/societies">Societies</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.wiley.com/go/resources/booksellers">Booksellers</a>
+            </div>
+            
+            </div>   
+            
+            <div class="w-right">
+                  <div class="w-rss-signup">
+                  <a href="http://www.wiley.com/go/rss">Get RSS Feeds of New Wiley Titles</a>
+                  <a href="http://www.wiley.com/go/rss"><img src="vi.asp_files/rss_feed_icon.gif" alt="" style="margin: 0pt 0pt -3px 3px;"></a>
+                  </div>
+                  
+                  <div class="corp-links">
+                        <a href="http://www.wiley.com/go/privacy_policy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="http://www.wiley.com/go/sitemap">Site Map</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="http://www.wiley.com/go/contact_us">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="http://www.wiley.com/go/help">Help</a>
+                  </div>
+                  
+                  <div class="copyright">
+                  <a href="http://www.wiley.com/go/copyright">Copyright © 2000-2010</a>
+            by
+            <a href="http://www.wiley.com/">John Wiley &amp; Sons, Inc.</a>, or related companies.
+            All rights reserved.
+                  </div>
+            </div>
+            
+            <div class="clear"></div>        
+    </div>
+    <div id="page-bottom"></div>
+<!-- END FOOTER -->
+
+
+<!-- BEGIN FOOTER -->    
+<!--     <div id="w-footer">
+        Resources for 
+        <a href="http://www.wiley.com/go/resources/authors">Authors</a>&nbsp;|&nbsp;
+        <a href="http://www.wiley.com/go/resources/librarians">Librarians</a>&nbsp;|&nbsp;
+        <a href="http://www.wiley.com/go/resources/instructors">Instructors</a>&nbsp;|&nbsp;
+        <a href="http://www.wiley.com/go/resources/booksellers">Booksellers</a>&nbsp;|&nbsp;
+        <a href="http://www.wiley.com/go/resources/press">Press</a>&nbsp;|&nbsp;
+        <a href="http://www.wiley.com/go/resources/investors">Investors</a>
+        
+        <p>
+            <a href="http://www.wiley.com/go/copyright">Copyright &copy; 2000-</a>
+            by
+            <a href="http://www.wiley.com">John Wiley &amp; Sons, Inc.</a> or related companies.
+            All rights reserved. Please read our <a href="http://www.wiley.com/go/privacy_policy">Privacy Policy</a>        </p>
+		
+		<span class="rss-signup">
+            <a href="http://www.wiley.com/go/rss">Get RSS Feeds of New Wiley Titles</a> &nbsp; <a href="http://www.wiley.com/go/rss"><img src="/bw/wiley/images/rss_feed_icon.gif" alt="" /></a>        </span>
+        
+        <div>
+            <a href="http://www.wiley.com/go/sitemap">Site Map</a>        </div>
+    </div>
+    <div id="page-bottom"></div>-->
+<!--GOOGLE ANALYTICS--> 
+<script src="vi.asp_files/urchin.js" type="text/javascript"> 
+</script> 
+<script type="text/javascript"> 
+_uacct = "UA-789257-10";
+urchinTracker();
+</script> 
+ 
+<!-- SmartSource 8 --> 
+   <script src="vi.asp_files/dcs_init.js" type="text/javascript"></script><script type="text/javascript" src="vi.asp_files/wtid.js"></script><script src="vi.asp_files/dcs_tag.js" type="text/javascript"></script><noscript><img alt="" border="0" name="DCSIMG" width="1" height="1" src="http://sdc8prod1.wiley.com/dcs60s2es00000kbemuolm2uf_1n3j/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.0.3"></noscript> 
+<!-- / SmartSource 8 --> 
+
+<!-- END FOOTER -->
+</div>
+
+</body><script type="text/javascript"><!--
+function __RP_Callback_Helper(str, strCallbackEvent, splitSize, func){var event = null;if (strCallbackEvent){event = document.createEvent('Events');event.initEvent(strCallbackEvent, true, true);}if (str && str.length > 0){var splitList = str.split('|');var strCompare = str;if (splitList.length == splitSize)strCompare = splitList[splitSize-1];var pluginList = document.plugins;for (var count = 0; count < pluginList.length; count++){var sSrc = '';if (pluginList[count] && pluginList[count].src)sSrc = pluginList[count].src;if (strCompare.length >= sSrc.length){if (strCompare.indexOf(sSrc) != -1){func(str, count, pluginList, splitList);break;}}}}if (strCallbackEvent)document.body.dispatchEvent(event);}function __RP_Coord_Callback(str){var func = function(str, index, pluginList, splitList){pluginList[index].__RP_Coord_Callback = str;pluginList[index].__RP_Coord_Callback_Left = splitList[0];pluginList[index].__RP_Coord_Callback_Top = splitList[1];pluginList[index].__RP_Coord_Callback_Right = splitList[2];pluginList[index].__RP_Coord_Callback_Bottom = splitList[3];};__RP_Callback_Helper(str, 'rp-js-coord-callback', 5, func);}function __RP_Url_Callback(str){var func = function(str, index, pluginList, splitList){pluginList[index].__RP_Url_Callback = str;pluginList[index].__RP_Url_Callback_Vid = splitList[0];pluginList[index].__RP_Url_Callback_Parent = splitList[1];};__RP_Callback_Helper(str, 'rp-js-url-callback', 3, func);}function __RP_TotalBytes_Callback(str){var func = function(str, index, pluginList, splitList){pluginList[index].__RP_TotalBytes_Callback = str;pluginList[index].__RP_TotalBytes_Callback_Bytes = splitList[0];};__RP_Callback_Helper(str, null, 2, func);}function __RP_Connection_Callback(str){var func = function(str, index, pluginList, splitList){pluginList[index].__RP_Connection_Callback = str;pluginList[index].__RP_Connection_Callback_Url = splitList[0];};__RP_Callback_Helper(str, null, 2, func);}
+//--></script></html>

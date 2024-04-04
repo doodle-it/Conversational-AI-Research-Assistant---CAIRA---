@@ -1,0 +1,40 @@
+#pageWrapper
+{
+	margin: 0px 0px 0px 3px;
+	width:640px;
+}
+
+
+/*Don't display irrelevant items*/
+#navContainer, .atop, #searchbox, #footer, .puffconteye, .puffcontarr {display:none}
+
+/*Remove borders from all images*/
+img {border:white solid 0px;}
+
+#sectionhead {background-color: #999;}
+
+#outerColumnContainer
+{
+	background-color: #fff;
+	border-style: solid;
+	border-width: 0 176px 0 2px;
+	border-left-color: #fff;	/* left hand column background color */
+	border-right-color: #f8f8f8;	/* right hand column background color */
+	color: #000;
+	z-index: 1;
+}
+
+/*To make sure display doesn't break... have a tiny LHS column*/
+#leftColumn
+{
+	margin: 0 1px 0 -2px;
+	width: 2px;
+}
+.inside_l {	display:none}
+
+
+h1, h2, h3, h4, h5, h6 {color:#000 !important; background-color: #fff !important;}
+
+
+/*Give the copyright notice space to breathe*/
+#copyright {margin:10px 0px 0px 10px;}

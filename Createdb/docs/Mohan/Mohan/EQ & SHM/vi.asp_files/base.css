@@ -1,0 +1,261 @@
+.clear{ clear: both; }
+.no-show{ display: none; }
+.display-block{ display: block; }
+img{ border: none; text-decoration: none; }
+
+a:link {color:#000;text-decoration:underline;}
+a:visited {color:#666;text-decoration:underline;}
+a:hover {color:#666;text-decoration:none;}
+
+a.contrast{ font-weight: bold; }
+a.contrast:link, a.contrast:visited{ color: #245849; text-decoration: none; }
+a.contrast:hover{ color: #245849; text-decoration: underline;}
+
+/* ------------ LAYOUT --------------*/
+/*
+    body, page, top-nav, breadcrumb, promo-area, 
+    content{sidebar,main-content}, w-footer 
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small; 
+    margin:0;
+    background: #f0f4f7;
+}
+
+form {
+    margin:0;
+    padding:0;
+}
+
+#page {
+    width:981px;
+    margin:0 auto 0 auto;
+    padding:0;
+    background: #fff url('/bw/wiley/images/backgrounds/page-bg.gif') repeat-y;
+}
+
+#page-bottom {
+    border-bottom:3px solid #CCC;  
+    margin:0 5px 0 5px;
+}
+
+
+/* ------------ LAYOUT: TOP-NAV --------------*/
+#top-nav {
+    border-bottom:5px solid #969F82;
+    background: url('/bw/wiley/images/backgrounds/top-nav-bg.gif') no-repeat top left;
+    font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+    color:#FFFFFF;
+    position:relative;
+    margin:0 6px 0 5px;
+    height:90px;
+    overflow:hidden;
+    position:relative;
+}
+
+#top-nav div {
+    position:absolute;
+    top:0px;
+    right:15px;
+    width:560px;
+    height:25px;
+    text-align: right;
+}
+
+/* TOP-NAV HOVER */
+#top-nav div ul{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 301px; 
+}
+
+#top-nav div ul li{ display: inline; margin: 0; }
+
+#top-nav div ul li a{ 
+    display: block; 
+    float: left; 
+    height: 25px;
+    margin: 0;
+    padding: 0 5px 0 5px;
+}
+
+#top-nav div ul li a.last{ padding-right: 0; }
+
+#top-nav div ul li#home-btn a{
+    width: 72px;
+    background: url('/bw/wiley/images/buttons/home.gif') no-repeat;
+}
+#top-nav div ul li#home-btn a:hover, #top-nav div ul li#home-btn a.active{
+    background-position: 0 -25px;
+}
+
+#top-nav div ul li#subjects-btn a{
+    width: 90px;
+    background: url('/bw/wiley/images/buttons/subjects.gif') no-repeat;
+}
+#top-nav div ul li#subjects-btn a:hover, #top-nav div ul li#subjects-btn a.active{
+    background-position: 0 -25px;
+}
+
+#top-nav div ul li#about-btn a{
+    width: 114px;
+    background: url('/bw/wiley/images/buttons/about.gif') no-repeat;
+}
+#top-nav div ul li#about-btn a:hover, #top-nav div ul li#about-btn a.active{
+    background-position: 0 -25px;
+}
+
+#top-nav div p{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:8px;
+    left:100px;
+}
+
+#top-nav form {
+    position:absolute;
+    top:55px;
+    right:15px;
+    width:590px;
+    height:25px; 
+    color:#C4D6BC;
+    text-align:right;
+}
+
+#top-nav input.text {
+    font-size:11px;
+	width:220px;
+    height:13px;
+    color:#000;
+    padding-left:3px;
+}
+
+#top-nav .search {
+    margin-bottom:-5px;
+}
+
+#top-nav a:link {color:#fff;text-decoration:none;}
+#top-nav a:visited {color:#fff;text-decoration:none;}
+#top-nav a:hover {color:#fff;text-decoration:underline;}
+
+/* ------------ LAYOUT: CONTENT --------------*/
+#content, #contentwbcompact{
+   /* margin: 15px 21px 0 20px;*/
+   margin: 0px 7px 0px 6px;
+    padding: 0px;
+}
+
+#contentwbcompact{
+/*contentwbcompact added to keep former top level blackwell pages compact*/
+	width: 759px;
+}
+
+/* ------------ LAYOUT: BREADCRUMB --------------*/
+#breadcrumb {
+    font-weight: bold;
+    font-size: 11px;
+    /* we don't have this image */
+	/*background: url('../cvo/images/backgrounds/breadcrumb-bg.gif') no-repeat top left;*/
+	text-transform:uppercase;
+    margin: 0 0 0 0;
+    color:#666666;
+	float: left;
+}
+
+#breadcrumb div {
+    /* we don't have this image */
+/*    background: url('../cvo/images/backgrounds/breadcrumb-bg-right.gif') no-repeat top right;*/
+	padding:1px 5px;
+    margin-top: 10px;
+	background-color:#ecf4e8;
+/*    min-height:37px;*/
+}
+
+#breadcrumb h1{
+    color: #245849;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform:none;
+}
+
+#breadcrumb a:link {color:#666666;text-decoration:none;}
+#breadcrumb a:visited {color:#666666;text-decoration:none;}
+#breadcrumb a:hover {color:#666666;text-decoration:underline;}
+
+/* ------------ LAYOUT: WILEY-BLACKWELL --------------*/
+#wileyblackwell {
+    clear: both;
+}
+
+
+/* ------------ LAYOUT: FOOTER --------------*/
+.w-left{ float: left; }
+.w-right{ float: right; }
+
+#w-footer {
+      color: #666;
+      font-size: 11px;
+      min-height: 69px;
+      height: auto !important; /* min-height in ie6 */
+      _height: 69px; /* min-height in ie6 */
+      margin: 25px 6px 0 5px;
+      padding: 5px 15px 25px 30px;
+      _padding-top: 0px;
+      border-top: 5px solid #ccc;
+      background: #e8e8e8 url(/bw/wiley/images/footer.gif) no-repeat top left;
+	  font-family: Arial, Helvetica, sans-serif;
+/*	  font-size: small; */
+}
+
+#w-footer h5{
+      padding: 0;
+      font-size: 11px;
+      margin: 20px 0 0 0;
+      font-weight: normal;
+      text-transform: uppercase;
+      }
+      
+#w-footer .w-rss-signup{ margin-top: 20px; }  
+.w-footer-links{ font-size: 12px; }   
+      
+#w-footer .w-right{ 
+      width: 500px; 
+      text-align: right;
+      }     
+
+#w-footer .corp-links{ margin: 28px 0 2px; }
+
+#w-footer a:link {color:#666666;text-decoration:none;}
+#w-footer a:visited {color:#666666;text-decoration:none;}
+#w-footer a:hover {color:#333333;text-decoration:underline;}
+
+/* ------------ DROPSHADOW --------------*/
+.shadow {
+    float: left;
+    background: url('/bw/wiley/images/shadow/shadow.gif') no-repeat bottom right;
+}
+
+.shadow div {
+    background: url('/bw/wiley/images/shadow/shadow-tr.gif') no-repeat right top;
+}
+
+.shadow div div {
+    background: url('/bw/wiley/images/shadow/shadow-bl.gif') no-repeat left bottom;
+    padding: 0 6px 6px 0;
+}
+
+.shadow img {
+    background-color: #fff;
+    color: #000;
+    vertical-align: bottom;
+}
